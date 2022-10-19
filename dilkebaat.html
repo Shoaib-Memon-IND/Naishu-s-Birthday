@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Naishu's Birthday">
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Hey Beautiful! Please Click on this link there is Coming intresting inside ✨." />
+  <meta name="keywords"
+      content="Naishu's Birthday" />
+  <meta name="author" content="Memon Mohammad Shoaib" />
+
+  <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+  <meta property="og:site_name" content="Naishu's Birthday" /> <!-- website name -->
+  <meta property="og:site" content="https://naishu.rf.gd" /> <!-- website link -->
+  <meta property="og:title"
+      content="Hey Beautiful! Please Click on this link there is Coming intresting inside ✨." />
+  <!-- title shown in the actual shared post -->
+  <meta property="og:description"
+      content="Hey Beautiful! Please Click on this link there is Coming intresting inside ✨." />
+  <!-- description shown in the actual shared post -->
+  <meta property="og:image" content="img/naishu.jpeg" /> <!-- image link, make sure it's jpg -->
+  <meta property="og:url" content="https://naishu.rf.gd" /> <!-- where do you want your post to link to -->
+  <meta property="og:type" content="article"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+  <!-- Favicon Link -->
+  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="favicon/favicon.ico">
+  <link rel="icon" type="image/png" href="favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" href="favicon/android-chrome-512x512.png">
+  <title>My ❤️ Birthday 🥳</title>
+</head>
+
+<body>
+  <audio hidden autoplay>
+    <source src="img/webbg.mpeg" type="audio/mpeg">
+    <source src="img/webbg.mpeg" type="audio/mp3">
+  </audio>
+  <div class="card">
+    <img src="img/naishu.jpeg" alt="Naishu" style="height: 50%; width: 50%;" class="birthday">
+    <div class="text">
+      <div class="bg_heart"></div>
+      <div class="container">
+        <h2 id="text1"></h2>
+      </div>
+    </div>
+    <div class="space"></div>
+  </div>
+
+  <script>
+    var love = setInterval(function () {
+      var r_num = Math.floor(Math.random() * 40) + 1;
+      var r_size = Math.floor(Math.random() * 65) + 10;
+      var r_left = Math.floor(Math.random() * 100) + 1;
+      var r_bg = Math.floor(Math.random() * 25) + 100;
+      var r_time = Math.floor(Math.random() * 5) + 5;
+    });
+    var i = 0;
+    var txt1 = "Hey Beautiful.....!  <<               I wasn't looking for anything at all when I first met you. <<<                Actually, I wasn't planning to fall for anyone so soon.                                                                           > But then < You came into my life.  <<                       And that was it,< I guess things just happened....! <<                           I found you, I found myself wanting to spend more time with you...!                                                     > It's so simple you know...!                     << I guess that's how best relationship starts...!                                                     > You not looking for anything and then suddenly you realize...!                    << You have something....!                                                             >Something worth keeping for life.....!                   << Ooh Hi, My Sweetheart ❤️...!         << Wish You a Happy Birthday Naishu 🥳";
+    var speed = 52;
+    typeWriter();
+    function typeWriter() {
+      if (i < txt1.length) {
+        if (txt1.charAt(i) == '<')
+          document.getElementById("text1").innerHTML += '</br>'
+        else if (txt1.charAt(i) == '>')
+          document.getElementById("text1").innerHTML = ''
+
+        else
+          document.getElementById("text1").innerHTML += txt1.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+  </script>
+  <script>
+    setTimeout(function(){
+            window.location.href = 'thanks.html';
+         }, 60000);
+  </script>
+
+</body>
+
+</html>
